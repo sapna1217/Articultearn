@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArticuLearn – Research Website</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <style>
+    #home {
+      padding: 4rem 1rem;
+      background: #f5f8fa;
+      text-align: center;
+    }
+
+    #home img {
+      max-height: 300px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    footer {
+      padding: 1rem 0;
+      text-align: center;
+      background-color: #f8f9fa;
+      margin-top: 2rem;
+    }
+    .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="path/to/your-logo.png" alt="ArticuLearn Logo" width="40" height="40" class="me-2" />
+        ArticuLearn
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#overview" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-book me-1"></i>Overview
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#problem">Introduction</a></li>
+              <li><a class="dropdown-item" href="#objectives">Research gap and Motivation</a></li>
+              <li><a class="dropdown-item" href="#chart">Research Problem & Solution</a></li>
+              <li><a class="dropdown-item" href="#gap">Objectives</a></li>
+              <li><a class="dropdown-item" href="#literature">Literature Review</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#authors"><i class="fas fa-users me-1"></i>Authors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#paper"><i class="fas fa-file-alt me-1"></i>Paper</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="container">
+  <h1 class="display-4 mb-3">Welcome to ArticuLearn</h1>
+  <p class="lead text-secondary mb-4">
+    Personalized AI-powered speech therapy system for children with speech disorders — designed for children, therapists, and parents.
+  </p>
+  <img src="https://www.speech.lk/wp-content/uploads/2024/06/Sp-Tx-1.jpg" alt="ArticuLearn illustration" />
+</section>
+
+<!-- Target Users Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Who is ArticuLearn For?</h2>
+    <div class="row text-center g-4">
+
+      <!-- Children Card -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-face-smile fa-3x text-primary mb-2"></i>
+            <h5 class="card-title mt-2">Children</h5>
+            <p class="card-text">Engaging, personalized activities and real-time feedback to improve speech and confidence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Therapists Card -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-stethoscope fa-3x text-success mb-2"></i>
+            <h5 class="card-title mt-2">Therapists</h5>
+            <p class="card-text">Advanced AI tools and analytics to support evidence-based speech therapy interventions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parents Card -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <i class="fas fa-hands-holding-child fa-3x text-warning mb-2"></i>
+            <h5 class="card-title mt-2">Parents</h5>
+            <p class="card-text">Clear progress tracking and at-home practice support to stay involved in their child’s development.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Content Sections -->
+<div class="container my-5">
+
+  <section id="overview" class="container mb-5">
+  <div class="row">
+    <div class="col-lg-10 mx-auto">
+      <h2 class="mb-4 text-center">Project Overview</h2>
+      <p class="text-justify">
+        Speech sound disorders in children span four main areas: phonological disorders, articulation errors, fluency disorders (stuttering), and childhood apraxia of speech (CAS). Studies emphasize the need for early, personalized intervention using both evidence-based and AI-driven techniques.
+        Phonological disorders involve rule-based sound errors and are effectively addressed through automated acoustic analysis and language-sensitive mobile apps. Articulation errors, caused by incorrect sound production, benefit from adaptive filtering and phoneme-specific practice tools.
+        Fluency disorders like stuttering disrupt speech flow, with real-time AI feedback proving effective in promoting self-regulation. CAS affects motor planning and requires intensive, structured repetition. Deep learning models now enable precise detection and adaptive therapy for CAS.
+    Together, research supports integrated, technology-enhanced systems like <strong>ArticuLearn</strong> that provide accessible, scalable, and multi-domain speech therapy tailored to each child’s needs.
+      </p>
+    </div>
+  </div>
+  <!-- Responsive Bootstrap Table -->
+      <div class="table-responsive mt-4">
+        <table class="table table-bordered table-hover table-striped text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Disorder</th>
+              <th>Error Type</th>
+              <th>Therapy Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Phonological</td>
+              <td>Rule-based sound errors</td>
+              <td>Phoneme pattern correction</td>
+            </tr>
+            <tr>
+              <td>Articulation</td>
+              <td>Mispronunciation of sounds</td>
+              <td>Sound-specific drills</td>
+            </tr>
+            <tr>
+              <td>Fluency (Stuttering)</td>
+              <td>Repetitions, prolongations</td>
+              <td>Self-regulation, pacing</td>
+            </tr>
+            <tr>
+              <td>CAS</td>
+              <td>Motor planning issues</td>
+              <td>Sequencing, coordination</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="gap" class="container py-5">
+  <h2 class="text-center mb-5">Research Gap and Motivation</h2>
+  <div class="row g-4">
+
+    <!-- Gap 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center p-3">
+        <img src="https://thumbs.dreamstime.com/b/intellectual-disability-rgb-color-icon-person-short-term-memory-loss-think-confusion-amnesiac-man-anxious-question-chronic-191798725.jpg"
+          class="img-fluid mx-auto my-2" style="width: 80px; height: 80px;" alt="Integrated Multi-Disorder Icon">
+        <div class="card-body">
+          <h5 class="card-title">Lack of Integrated Multi-Disorder Platforms</h5>
+          <p class="card-text">Most tools address only one disorder, lacking a unified system for phonological, articulation, stuttering, and CAS therapies.</p>
+          <p class="fw-bold text-primary">Motivation:</p>
+          <p class="card-text">ArticuLearn offers an all-in-one solution with smooth transitions across therapy modules.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gap 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center p-3">
+        <img src="https://media.istockphoto.com/id/1080304556/vector/personalization-line-icon.jpg?s=612x612&w=0&k=20&c=JMydyvR2jdqUu-1SIIya3qsg2QQWFj19OR6kjUgc2eY="
+          class="img-fluid mx-auto my-2" style="width: 80px; height: 80px;" alt="Personalization Icon">
+        <div class="card-body">
+          <h5 class="card-title">Limited Personalization in Therapy Delivery</h5>
+          <p class="card-text">Generic tasks are often used, without adjusting to a child’s evolving speech patterns or performance.</p>
+          <p class="fw-bold text-primary">Motivation:</p>
+          <p class="card-text">ArticuLearn personalizes content using LSTM classifiers and reinforcement learning algorithms.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gap 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center p-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/753/753318.png"
+          class="img-fluid mx-auto my-2" style="width: 80px; height: 80px;" alt="Validation Icon">
+        <div class="card-body">
+          <h5 class="card-title">Limited Clinical Validation</h5>
+          <p class="card-text">Many tools lack validation through real-user testing or pilot clinical studies.</p>
+          <p class="fw-bold text-primary">Motivation:</p>
+          <p class="card-text">ArticuLearn has undergone pilot testing, demonstrating both usability and therapeutic accuracy.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="problem-solution" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Research Problem & Solution</h2>
+    <div class="row g-4 align-items-start">
+
+      <!-- Research Problem -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0 p-4">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-2 me-2">🧩</span>
+            <h5 class="mb-0">Research Problem</h5>
+          </div>
+          <p class="card-text">
+            Children with speech sound disorders (SSDs) — including phonological disorders, articulation difficulties, fluency disorders (stuttering), and childhood apraxia of speech (CAS) — often struggle to access consistent, personalized, and effective therapy.
+          </p>
+          <p class="card-text">
+            Existing solutions typically address only one disorder, lack real-time feedback, are not tailored to individual needs, and are rarely adapted for local languages or low-resource settings. These limitations hinder early diagnosis, delay progress, and reduce therapy engagement, especially in multilingual countries like Sri Lanka.
+          </p>
+        </div>
+      </div>
+
+      <!-- Proposed Solution -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm border-0 p-4">
+          <div class="d-flex align-items-center mb-3">
+            <span class="fs-2 me-2">💡</span>
+            <h5 class="mb-0">Proposed Solution</h5>
+          </div>
+          <p class="card-text">
+            <strong>ArticuLearn</strong> is an integrative, AI-powered mobile therapy system that combines advanced machine learning models with interactive tools to deliver personalized, real-time speech therapy for children aged 3–14.
+          </p>
+          <p class="card-text">
+            The system includes specialized modules for phonology, articulation, stuttering, and CAS, each powered by techniques like LSTM networks, MFCC-based feature extraction, transformer attention mechanisms, and reinforcement learning.
+          </p>
+          <p class="card-text">
+            It adapts to the child’s performance, provides instant feedback, supports local languages, and enables scalable, home-based therapy—bridging the accessibility and personalization gap in conventional systems.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <section id="gap" class="mb-5">
+    <!-- Include AOS (Animate On Scroll) CSS & JS in your <head> and before </body> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- Font Awesome (Make sure it's already in your project) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- Research Objectives Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Research Objectives</h2>
+    <div class="row g-4">
+
+      <!-- Objective 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+          <h5 class="card-title">Unified AI-Based Therapy</h5>
+          <p class="card-text">Support for articulation, phonological, fluency, and CAS disorders in one platform.</p>
+        </div>
+      </div>
+
+      <!-- Objective 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-wave-square fa-3x text-success mb-3"></i>
+          <h5 class="card-title">Phoneme Error Detection</h5>
+          <p class="card-text">LSTM and deep learning using MFCCs to detect phoneme-level speech errors.</p>
+        </div>
+      </div>
+
+      <!-- Objective 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-robot fa-3x text-warning mb-3"></i>
+          <h5 class="card-title">Adaptive Feedback Mechanism</h5>
+          <p class="card-text">Reinforcement learning to personalize therapy exercises dynamically.</p>
+        </div>
+      </div>
+
+      <!-- Objective 4 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-network-wired fa-3x text-danger mb-3"></i>
+          <h5 class="card-title">CAS Deficit Detection</h5>
+          <p class="card-text">Use of attention models and DTW for motor planning deficit detection in CAS.</p>
+        </div>
+      </div>
+
+      <!-- Objective 5 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-mobile-alt fa-3x text-info mb-3"></i>
+          <h5 class="card-title">Mobile App Delivery</h5>
+          <p class="card-text">Interactive app for children aged 3–14 with multilingual support in low-resource areas.</p>
+        </div>
+      </div>
+
+      <!-- Objective 6 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="card h-100 text-center border-0 shadow p-4">
+          <i class="fas fa-vials fa-3x text-secondary mb-3"></i>
+          <h5 class="card-title">System Evaluation</h5>
+          <p class="card-text">Test performance using normative and disorder-specific child speech samples.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+  </section>
+
+  <section id="literature" class="mb-5">
+    <!-- Methodology Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Methodology</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="Image3.png" alt="Methodology Illustration" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <p>
+          The methodology of the ArticuLearn project involves designing an integrated AI-based speech therapy
+          system utilizing deep learning techniques such as LSTM for phoneme-level error detection, and reinforcement
+          learning for personalized feedback. The system leverages Mel-Frequency Cepstral Coefficients (MFCCs) as
+          key acoustic features to analyze speech signals. Attention mechanisms and dynamic time warping (DTW) algorithms
+          are applied to detect and quantify motor planning deficits associated with childhood apraxia of speech (CAS).
+          The therapy exercises are delivered through a user-friendly mobile application tailored for children aged 3 to 14,
+          supporting multilingual access and accommodating low-resource settings. Pilot testing is conducted using
+          both normative and disorder-specific child speech datasets to evaluate therapeutic impact, accuracy, and latency.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <section id="authors" class="mb-5">
+    <h2>Authors</h2>
+    <ul>
+      <li>Kishen Ranasinghe – it21222290@my.sliit.lk</li>
+      <li>Pasindu Fernando – it21221446@my.sliit.lk</li>
+      <li>Sapna De Zoysa – it21219634@my.sliit.lk</li>
+      <li>Shehan Annasiwatta – it21217968@my.sliit.lk</li>
+      <li>Supervisors: Samantha Thelijjagoda, Ishara Weerathunga</li>
+    </ul>
+  </section>
+
+  <section id="paper" class="mb-5">
+    <h2>Conference Paper</h2>
+    <p>Download the official ICCPCT 2025 paper:</p>
+    <a href="assets/ArticuLearn-Paper.pdf" class="btn btn-primary" download>📄 Download PDF</a>
+  </section>
+
+  <section id="contact" class="mb-5">
+    <h2>📬 Contact / Feedback</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Your Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required />
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Your Email:</label>
+        <input type="email" class="form-control" id="email" name="_replyto" required />
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Your Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 ArticuLearn Research Team</p>
+</footer>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Smooth scroll for navbar links -->
+<script>
+  document.querySelectorAll('a.nav-link, .dropdown-item').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+      // Collapse navbar on mobile after click
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
